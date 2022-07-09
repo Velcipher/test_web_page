@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    aside {
+      display: block;
+    }
+    div {
+      display: block;
+      margin: 30px auto 30px auto;
+      width: 700px;
+      background: radial-gradient(
+        circle at 10% 20%,
+        rgb(12, 187, 108) 10%,
+        rgb(17, 183, 175) 90%
+      );
+      border: 3px solid #000;
+      border-radius: 1%;
+      padding: 20px;
+    }
+    h1 {
+      margin-top: 0;
+      font-family: Georgia, Times, serif;
+      font-size: 35px;
+      font-weight: 800;
+      display: block;
+      text-align: center;
+      border: 2px solid rgb(10, 55, 82);
+      color: #fff;
+    }
+    h2 {
+      margin: 0;
+    }
+    div img {
+      display: block;
+      width: 500px;
+      margin-left: 97px;
+    }
+    p {
+      text-indent: 25px;
+    }
+    button {
+      display: block;
+      margin: auto;
+      width: 400px;
+      height: 50px;
+      font-size: 30px;
+      font-weight: 700;
+      transition: all 200ms ease;
+      background: #04aa6d;
+      border: 3px solid #010c06f4;
+      border-radius: 10px;
+      color: #000;
+      padding: 10px;
+      box-shadow: 0px 2px 7px 3px #2b2b2b;
+    }
+    button:hover {
+      background: #fff;
+      color: #04aa6d;
+    }
+    #aside1 {
+      position: fixed;
+      z-index: 101;
+      width: 350px;
+      display: block;
+      margin-left: 750px;
+      box-shadow: 0 0 0 1px #cff inset;
+      background: #04aa6d;
+      color: #fff;
+      text-align: center;
+    }
+    #aside2 {
+      text-align: justify;
+      position: fixed;
+      margin: 130px 0 0 750px;
+      padding: 5px;
+      border: 2px solid #000;
+      z-index: 101;
+      width: 325px;
+    }
+    #aside3 {
+      display: block;
+      position: fixed;
+      margin: -6px 0 0 -360px;
+      border: 2px solid #000;
+      z-index: 101;
+      width: 300px;
+      text-align: center;
+    }
+    #aside2 ul {
+      padding: 0;
+      list-style: none;
+    }
+    .author {
+      text-decoration: underline;
+    }
+    .main {
+      width: 600px;
+      color: #fff;
+      text-align: justify;
+      font-size: 20px;
+      font-family: Georgia, Times, serif;
+      line-height: 130%;
+    }
+    .wiki {
+      background: rgb(52, 183, 181, 0.3);
+      width: 684px;
+      margin-top: 20px;
+      padding: 5px;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 700;
+      transition: all 200ms ease;
+      text-decoration: none;
+      color: #fff;
+    }
+    .wiki:hover {
+      background: #fff;
+      color: rgb(0, 0, 0);
+    }
+    .uty {
+      width: 100px;
+      margin: 0 auto;
+    }
+    #nutrience {
+      display: block;
+      padding: 10px;
+      margin: auto;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #nutrience td,
+    #nutrience th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #nutrience tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    #nutrience tr:hover {
+      background-color: rgba(221, 221, 221, 0.74);
+    }
+
+    #nutrience th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      background-color: #04aa6d;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <aside id="aside3">
+        <img
+          class="uty"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIvfAc3QGtl05mFXb246g7RBT6CXTYJobdmA&usqp=CAU"
+          alt="health food"
+          width="50px"
+        />
+        <h2>Nutrience consistance</h2>
+        <table id="nutrience">
+          <tr>
+            <th>Compound (100g)</th>
+            <th>Value (g)</th>
+            <th>Dayly value (%)</th>
+          </tr>
+          <tr>
+            <td><strong>Total fat</strong></td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Saturated fat:</td>
+            <td>2.4</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td><em>Trans </em>Fat</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><strong>Cholesterol</strong></td>
+            <td>13</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Sodium</td>
+            <td>35</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Total Carbohydrate</td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Total Sugars</td>
+            <td>4</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Protein</td>
+            <td>9</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>Calcium</td>
+            <td>100</td>
+            <td>8</td>
+          </tr>
+        </table>
+      </aside>
+      <aside id="aside1">
+        <p>
+          <a
+            href="https://www.wholefoodsmarket.com/tips-and-ideas/archive/14-ideas-greek-yogurt-recipes"
+            target="_blank"
+            ><strong>How to coock your own greek jogurt</strong></a
+          >
+        </p>
+        <p></p>
+        <hr />
+        <p><a href="https://en.wikipedia.org/wiki/Strained_yogurt"></a></p>
+        <p>
+          <strong>Autor:</strong> <span class="author">Ilona Mohilnikova</span
+          ><br />
+          <strong> Email:</strong>
+          <span class="author">ilona.mogilnikova@gmail.com </span>
+        </p>
+      </aside>
+
+      <aside id="aside2">
+        <ul>
+          <li>
+            <strong>1. Good source of protein and other nutrients</strong><br />
+            One of the main benefits of Greek yogurt is that it’s rich in
+            protein, a macronutrient needed for virtually all chemical reactions
+            in the body, healthy immune function, tissue repair, and
+            <a
+              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4928581/"
+              target="_blank"
+              >more</a
+            >.
+          </li>
+          <hr />
+          <li>
+            <strong>2. May benefit bone health</strong><br />
+            Greek yogurt contains a number of nutrients that are necessary for
+            maintaining the health of the skeletal system, including protein,
+            calcium, magnesium, and
+            <a
+              href="https://www.healthline.com/nutrition/foods-high-in-phosphorus"
+              target="_blank"
+              >phosphorus</a
+            >.
+          </li>
+          <hr />
+          <li>
+            <strong>3. May support gut health </strong><br />
+            Research suggests that eating yogurt regularly may help support a
+            healthy digestive system by increasing bacterial diversity in the
+            guts of some people
+            <a
+              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5374383/"
+              target="_blank"
+              >(Source)</a
+            >.
+          </li>
+          <hr />
+          <li>
+            <strong
+              >4. May support muscle recovery and healthy body
+              composition</strong
+            ><br />
+            Consuming enough protein is essential for promoting overall health
+            and muscle recovery. Greek yogurt is a great post-workout snack
+            option for athletes. Its high protein content may promote muscle
+            protein synthesis and recovery
+            <a
+              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5852800/"
+              target="_blank"
+              >(Source)</a
+            >.
+          </li>
+        </ul>
+      </aside>
+      <h1>What Is Greek Yogurt?</h1>
+      <img
+        src="https://prod.static9.net.au/_/media/Network/Images/2017/02/17/09/13/170217coach_yoghurt.jpg"
+        alt="greek_jogurt"
+      />
+      <div class="wiki">
+        <h2>Read on Wikipedia</h2>
+      </div>
+
+      <div class="main">
+        <span
+          ><p>
+            A decade ago, before Greek yogurt had reached full ubiquity, there's
+            a good chance that people bought it by mistake, thinking it was the
+            plain old yogurt they were used to. They took it home, peeled off
+            the plastic thingy, stuck a spoon in and thought, "Wait...what is
+            this stuff?!" Fast forward to present day, and Greek yogurt is just
+            as common—if not more so—than the regular stuff. But the question
+            remains: What is Greek yogurt, anyway? And what makes Greek yogurt
+            different than regular yogurt? Because, well, it most definitely is.
+          </p>
+
+          <p>
+            Well, for starters, Greek yogurt is thicker and denser than its
+            non-Greek counterpart. Where regular yogurt is almost pourable,
+            Greek yogurt is nearly solid—you can practically stick a spoon
+            upright in it. And that’s because Greek yogurt is strained, while
+            regular yogurt is not. The two things aren't fundamentally different
+            in composition. Both are made from milk that's been cultured and
+            allowed to ferment. Greek yogurt is just what you get when you take
+            regular yogurt, plop it in some fine mesh cloth, and allow some of
+            the liquid in it—whey, to be more precise—to slowly drain out,
+            resulting in a thicker yogurt with less moisture. This process
+            changes the texture of the yogurt without removing the satisfying
+            sourness that we associate with all yogurts.
+          </p>
+
+          <p>
+            This technique isn’t employed by just the Greeks, though. Straining
+            yogurt is common throughout the Middle East and Mediterranean.
+            Labneh, the super-thick yogurt you might have heard us talking about
+            from time to time, is made in the same way. This yogurt is
+            essentially Greek yogurt taken a step further, strained aggressively
+            to remove enough whey that the result is almost cream cheese-like in
+            texture. The more concentrated the yogurt, the more concentrated the
+            flavor—if you like the characteristic lactic tang that yogurt
+            offers, you'll love the thicker versions.
+          </p>
+
+          <p>
+            And whether we’re talking Greek yogurt, labneh, or other regional
+            varieties, that thickness lends itself perfectly to creamy dips and
+            sauces. Whether we’re doing a quick roasted shallot yogurt dip or
+            just dolloping it on top of some lamb chops or shakshuka, we love
+            strained yogurt for the cooling, creamy richness and bright contrast
+            it lends to dishes.
+          </p>
+
+          <p>
+            At the end of the day, the biggest difference between Greek yogurt
+            and regular yogurt is texture. You can substitute it for regular
+            yogurt in recipes, though you'll have to whisk some water or other
+            liquid into it to get the texture right; failing to do so might
+            throw off the moisture of the whole recipe, with dry results. (And
+            nobody likes dry results.) The same cannot be said in the reverse,
+            unfortunately; if a recipe calls for Greek yogurt, and all you've
+            got is regular, you're going to have a hard time removing liquid
+            from the recipe on the fly.
+          </p>
+
+          <p>
+            So yeah, Greek yogurt is just strained yogurt. But let’s be honest.
+            You’d probably rather ask for “Greek yogurt” than “strained yogurt.”
+            The latter feels kind of sterile and loveless, doesn't it? “Greek”
+            yogurt inspires thoughts of royal blue oceans caressing warm, sandy
+            shores. Which we totally get, because this stuff takes us to a
+            better place. At least until it’s gone.
+          </p></span
+        >
+        <button>TRY GREEK YOUGURT</button>
+      </div>
+    </div>
+    <script>
+      const btn = document.querySelector("button");
+      function greeting() {
+        let name = prompt("What is your name");
+        let agree = prompt(
+          "Do you agree to receive new articles from us to your email in the future?"
+        );
+        let question = agree.toUpperCase();
+
+        if (question === "YES") {
+          prompt("Tell us your email, please.");
+          alert(
+            `Hello ${name} 👋! Thank you for your interest, we'll be in touch!`
+          );
+        }
+        if (question === "NO") {
+          alert(
+            `Hello ${name} 👋! Thank you for your aswer. Have a nice day!🌞`
+          );
+        }
+        if (question != "YES" && question != "NO") {
+          alert(`Hello, ${name}, it is incorrect answer🙁. Let's try again.💪`);
+        }
+      }
+
+      btn.addEventListener("click", greeting);
+
+      const wiki = document.querySelector(".wiki");
+
+      wiki.onclick = function () {
+        window.location.href = "https://en.wikipedia.org/wiki/Strained_yogurt";
+      };
+    </script>
+  </body>
+</html>
